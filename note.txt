@@ -1,9 +1,17 @@
 Github
 
-//Khoi tao
+// Init Khoi tao
 $ git init
+
+// Add file
 $ git add <file>
+
+// Status Xem tinh trang
 $ git status // xem tinh trang
+
+// Push file
 $ git push -u origin <main>
 $ git push -u origin <dev>
+
+// Pull keo file ve
 $ git pull
