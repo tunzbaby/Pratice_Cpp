@@ -2,26 +2,47 @@
 // using namespace std
 using namespace std;
 
-// Khai báo và định nghĩa hàm đầy đủ ở đây, trước hàm main
-float f_thi_du(float x, int b, int c)
+/*
+ * Tinh giai thua: n!= 1.2.3...(n-1).n 
+ */
+/* 
+long int tinh_giai_thua(int n)
 {
-    float gia_tri; // Khai bao bien cuc bo
-    gia_tri = x*x+b*x+c;
-    return gia_tri;
+    int i;
+    long int gt = 1;
+
+    if(n>1)
+        for(i = 2; i <= n; i++)
+            gt *= i;
+    return gt;
 }
 
 int main()
 {
-    //float f_thi_du(float, int, int) không cần nữa
-    float x=1.5;
-    float y, z;
-    int n=3, p=5, q=10;
-
-    y = f_thi_du(x, n, p);
-    cout << "Gia tri cua y = " << y << endl;
-
-    z= f_thi_du(x+0.5, q, n-1);
-    cout << "Gia tri cua z = " << z << endl;
-
+    //int tinh_giai_thua(int);
+    int n;
+    cout << "\nn= ";
+    cin >> n;
+    cout << "\n n! = " << tinh_giai_thua(n) << endl;
     return 0;
 }
+*/
+
+char chuyen_thanh_chu_hoa(char ch)
+{
+    char c2;
+    c2 = (ch >= 'a' && ch <= 'z') ? ('A' - 'a' + ch) : ch;
+    return (c2);
+}
+
+int main()
+{
+    char thuong, hoa;
+    cout << "Hay go vao mot ki tu: ";
+    cin >> thuong;
+    hoa = chuyen_thanh_chu_hoa(thuong);
+    cout << "\n Chu hoa tuong ung la " << hoa << endl;
+    return 0;
+}
+
+

@@ -57,5 +57,6 @@ void ham_con_2(kiểu giá trị 1 & tên giá trị, kiểu giá trị 2 & tên
  * gcc
  */
  $ g++ -g HelloWorld.cpp -o test
+ Save trước rồi build g++ lại.
 
 
