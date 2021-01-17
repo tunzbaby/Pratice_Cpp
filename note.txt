@@ -1,5 +1,6 @@
-Github
-
+/*
+ * Github
+ */
 // Init Khoi tao
 $ git init
 
@@ -15,3 +16,41 @@ $ git push -u origin <dev>
 
 // Pull keo file ve
 $ git pull
+
+
+/*
+ *  khai báo hàm
+ */
+=1 float f_thi_du(float x, int b, int c)
+=2 kiểu_dữ_liệu tên hàm(các tham số hình thức và kiểu của chúng) 
+
+/*
+ * Cấu trúc chương trình
+ */
+
+#include <thư viện.h>
+using namespace std;
+
+// -> Chương trình chính
+// Cach 1 -> Dinh nghĩa hàm chính void
+void main()
+{
+    // Prototype hàm con
+    void ham_con_1(kiểu giá trị 1, kiểu giá trị 2)
+    void ham_con_2(kiểu giá trị 1, kiêu giá trị 2)
+    // Không cần return khi định nghĩa kiểu giá trị hảm == void
+}
+
+// Phần cuối chương trình
+void ham_con_1(kiểu giá trị 1 & tên giá trị, kiểu giá trị 2 & tên giá trị 2)
+void ham_con_2(kiểu giá trị 1 & tên giá trị, kiểu giá trị 2 & tên giá trị 2)
+
+// Cach 2 -> ĐỊnh nghĩa hàm chín Int trả về giá trị int cho hàm main
+// cần return 0; ở cuối cùng
+
+/*
+ * gcc
+ */
+ $ g++ -g HelloWorld.cpp -o test
+
+
