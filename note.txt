@@ -5,10 +5,13 @@
 $ git init
 
 // Add file
-$ git add <file>
+$ git add -A // update all file
 
 // Status Xem tinh trang
 $ git status // xem tinh trang
+
+// Commit file
+$ git commit -m "update more file"
 
 // Push file
 $ git push -u origin <main>
@@ -47,6 +50,8 @@ void ham_con_2(kiểu giá trị 1 & tên giá trị, kiểu giá trị 2 & tên
 
 // Cach 2 -> ĐỊnh nghĩa hàm chín Int trả về giá trị int cho hàm main
 // cần return 0; ở cuối cùng
+
+// Cach 3 -> include > Din nghia ham full > void main khong return gia tri, int main return gia tri
 
 /*
  * gcc
