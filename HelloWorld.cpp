@@ -2,47 +2,71 @@
 // using namespace std
 using namespace std;
 
-/*
- * Tinh giai thua: n!= 1.2.3...(n-1).n 
- */
-/* 
-long int tinh_giai_thua(int n)
-{
-    int i;
-    long int gt = 1;
-
-    if(n>1)
-        for(i = 2; i <= n; i++)
-            gt *= i;
-    return gt;
-}
+int i; /* Bien toan cuc, truoc main */
 
 int main()
 {
-    //int tinh_giai_thua(int);
-    int n;
-    cout << "\nn= ";
-    cin >> n;
-    cout << "\n n! = " << tinh_giai_thua(n) << endl;
+    void thi_du(void);
+
+    for(i=1; i <= 5; i++) thi_du();
     return 0;
 }
-*/
 
-char chuyen_thanh_chu_hoa(char ch)
+void thi_du(void)
 {
-    char c2;
-    c2 = (ch >= 'a' && ch <= 'z') ? ('A' - 'a' + ch) : ch;
-    return (c2);
+    int m = 3; /* Bien dia phuong */
+    m++;
+    cout << i << " " << m << endl;
 }
 
-int main()
-{
-    char thuong, hoa;
-    cout << "Hay go vao mot ki tu: ";
-    cin >> thuong;
-    hoa = chuyen_thanh_chu_hoa(thuong);
-    cout << "\n Chu hoa tuong ung la " << hoa << endl;
-    return 0;
-}
+// int main()
+// {
+//     void hoan_vi(int a, int b); // prototype
+
+//     int n = 10, m = 20;
+//     cout << " Truoc khi goi ham: " << n << " " << m << endl;
+
+//     hoan_vi(n, m);
+
+//     cout << " Sau khi goi ham " << n << " " << m << endl;
+
+//     return 0;
+// }
+
+// void hoan_vi(int a, int b)
+// {
+//     int t;
+//     cout << " Truoc khi hoan vi: " << a << " " << b << endl;
+//     t=a;
+//     a=b;
+//     b=t;
+//     cout << " Sau khi hoan vi: " << a << " " << b << endl;
+// }
+
+// // Them gia tri con tro
+// int main()
+// {
+//     void hoan_vi(int *p, int *q); // prototype
+
+//     int n = 10, m = 20;
+//     cout << " Truoc khi goi ham: " << n << " " << m << endl;
+
+//     hoan_vi(&n, &m);
+
+//     cout << " Sau khi goi ham " << n << " " << m << endl;
+
+//     return 0;
+// }
+
+// void hoan_vi(int *p, int *q)
+// // p va q bay gio la 2 dia chi
+// {
+//     int t;
+//     cout << " Truoc khi hoan vi: " << *p << " " << *q << endl;
+//     t = *p;
+//     *p = *q;
+//     *q = t;
+//     cout << " Sau khi hoan vi: " << *p << " " << *q << endl;
+// }
 
 
