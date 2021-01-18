@@ -58,6 +58,17 @@ void ham_con_2(kiểu giá trị 1 & tên giá trị, kiểu giá trị 2 & tên
  * Bien toan cuc, truoc main
  */
 
+/* Cach truy cap bien cuc bo :: */
+int count; // Global variable, bien toan cuc
+
+int main()
+{
+    int count; // Local variable, bien dia phuong
+    count = 1234; // Local variable
+    ::count = 4321; // Global variable
+    return 0;
+
+
 /*
  * gcc
  */
